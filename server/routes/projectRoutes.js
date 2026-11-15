@@ -320,15 +320,15 @@ router.post('/join/:roomId', protect, validateRoomId, async (req, res) => {
 const WANDBOX_LANG_MAP = {
   c: { compiler: 'gcc-head', options: 'warning,c11' },
   cpp: { compiler: 'gcc-head', options: 'warning,gnu++17' },
-  java: { compiler: 'openjdk-jdk-head', options: '' },
+  java: { compiler: 'openjdk-jdk-21+35', options: '' },
   python: { compiler: 'cpython-head', options: '' },
-  javascript: { compiler: 'nodejs-head', options: '' },
-  typescript: { compiler: 'typescript-5.3.3', options: '' },
-  go: { compiler: 'go-head', options: '' },
-  rust: { compiler: 'rust-head', options: '' },
-  php: { compiler: 'php-head', options: '' },
-  ruby: { compiler: 'ruby-head', options: '' },
-  csharp: { compiler: 'mono-head', options: '' },
+  javascript: { compiler: 'nodejs-20.17.0', options: '' },
+  typescript: { compiler: 'typescript-5.6.2', options: '' },
+  go: { compiler: 'go-1.23.2', options: '' },
+  rust: { compiler: 'rust-1.82.0', options: '' },
+  php: { compiler: 'php-8.3.12', options: '' },
+  ruby: { compiler: 'ruby-3.4.9', options: '' },
+  csharp: { compiler: 'mono-6.12.0.199', options: '' },
 };
 
 /**
